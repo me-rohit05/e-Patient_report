@@ -261,6 +261,10 @@ hr {
   margin-top: 10px;
   margin-bottom: 0;
 }
+.email {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .tx-cl {
   color: var(--text-bl-color);
 }
