@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Patient_report</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"  href="favicon.ico">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
+  </head>
+  <body>
+    <nav class="sidebar close ">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="name">View Report</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a  href="new_patiet.html">
+                <i class='bx bx-list-plus bx-sm icon'></i>
+                  <span class="text nav-text">NEW</span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="index.html">
+                <i class='bx bx-user bx-sm icon' ></i>
+                  <span class="text nav-text">PATIENT</span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bx-folder-open bx-sm icon'></i>
+                  <span class="text nav-text">FOLDER</span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bx-cloud-upload bx-sm icon'></i>
+                  <span class="text nav-text">UPLOAD</span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bx-notepad bx-sm icon'></i>
+                  <span class="text nav-text">REPORT</span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a  href="#">
+                <i class='bx bx-cog bx-sm icon'></i>
+                  <span class="text nav-text">SETTING</span>
+                </i>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="bottom-content">
+          <li>
+            <a  href="#">
+              <i class='bx bx-log-out-circle bx-sm icon bx-rotate-180'></i>
+                <span class="text nav-text">LOGOUT</span>
+              </i>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class='bx bx-moon bx-sm icon moon'></i>
+              <i class='bx bx-sun bx-sm icon sun '></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class=" home">
+      <div class="container ">
+        <div class="row aling-items-center ">
+
+          <div class=" col-3">
+            <div class="home-header-image-holder justify-content-center ">
+              <img
+                class=" img-fluid shadow-sm pat-img full-width"
+                src="img/patient.jpg"
+                alt=""
+              />    
+            </div>
+            <div class="patient-name">
+              <h5 class="pat-name tx-cl">Bruice Banner</h5>
+              <p class="text-secondary wrap">bruicebanner@example.com</p>
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="tx-cl">15</h5>
+                  <p class="text-secondary fs-6">Past</p>
+                </div>
+                <span id="vertical-line"></span>
+                <div class="col">
+                  <h5 class="tx-cl">02</h5>
+                  <p class="text-secondary fs-6">Upcoming</p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary">Send Message</button>
+            </div>
+            <hr>
+            <div class="">
+              <h6 class="text-secondary">Files / Documents</h6>
+              <a href="#" class="docs"  >
+                <div class="result1 files">
+                  <i class='bx bx-notepad'></i>
+                  <span>Check Up Results.pdf</span>
+                </div>
+              </a>
+              <a href="#" class="docs">
+                <div class="result2 files">
+                  <i class='bx bx-notepad'></i>
+                  <span>Check Up Results.pdf</span>
+                </div>
+              </a>
+              
+              <a href="#" class="docs">
+                <div class="medical-pricp files">
+                  <i class='bx bx-notepad'></i>
+                  <span>Medical Precription.pdf</span>
+                </div>
+              </a>
+              
+              <a href="#" class="docs">
+                <div class="dental-x files">
+                  <i class='bx bx-notepad'></i>
+                  <span>Dental X-Ray Results.pdf</span>
+                </div>
+              </a>
+              
+              
+            </div>
+          </div>
+
+          <div class="col-9 py-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="gender">
+                 <p class="fs-6 text-secondary">Gender</p>
+                 <h6 class="tx-cl">Male</h6>
+                </div>
+                <hr>
+                <div class="street">
+                 <p class="fs-6 text-secondary">Street Address</p>
+                 <h6 class="tx-cl">RajenderNagar,</h6>
+                </div>
+                <hr >
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="Birtday">
+                 <p class="fs-6 text-secondary">Birtday</p>
+                 <h6 class="tx-cl">May 8th, 1973</h6>
+                </div>
+                <hr>
+                <div class="city">
+                 <p class="fs-6 text-secondary">City</p>
+                 <h6 class="tx-cl">Sahibganj</h6>
+                </div>
+                <hr>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="Phone">
+                  <p class="fs-6 text-secondary">Phone Number</p>
+                  <h6 class="tx-cl">+91-8340455859</h6>
+                </div>
+                <hr>
+                <div class="Zip">
+                  <p class="fs-6 text-secondary">Zip Code</p>
+                  <h6 class="tx-cl">816109</h6>
+                </div>
+                <hr>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="Register-dt">
+                  <p class="fs-6 text-secondary">Register Date</p>
+                  <h6 class="tx-cl">Aug 10th, 2020</h6>
+                </div>
+                <hr>
+                <div class="Status">
+                  <p class="fs-6 text-secondary">Member Status</p>
+                  <h6 class="tx-cl">Active Member</h6>
+                </div>
+                <hr>
+              </div>
+            </div>
+
+            <div class="appointments appoint-nav">
+              <div class="btn-group " style="width: 80%;">
+                <a href="#" class="btn btn-secondary active" aria-current="page">Upcoming Appointments</a>
+                <a href="#" class="btn btn-secondary">Past Appointments</a>
+                <a href="#" class="btn btn-secondary">Medical Records</a>
+              </div>
+            </div>
+
+            <div class="appointment-tab">
+              <div class="card text-bg-light list-group small">
+                <div class="card-header fs-6  d-flex  justify-content-between aling-items-center tx-cl>
+                  Root Canal Treatment<span><button type="button" class="btn btn-light ">Show Previous Treatment</button></span>
+                </div>
+                <div class="card-body">
+                  <div class=" align-items-center bg-white p-3 border rounded ">
+                    <div class="row">
+                      <div class="col-lg-3 col-5">
+                        <div class=" ms-3">
+                          <div class="date">
+                            <h5 class="fw-500">26 Nov'20</h5>
+                            <p class="fs-7 text-secondary">09.00 - 10.00</p>
+                          </div>  
+                        </div>
+                      </div>
+                      <span id="vertical-line"></span>
+                      <div class="col-lg-3 col-5">
+                        <div class=" ms-3">
+                          <div class="Treatment-type">
+                            <p class="text-secondary">Treatment</p>
+                            <p class="fs-6 ">Open Access</p>
+                          </div>  
+                        </div>
+                      </div>
+                      <span id="vertical-line"></span>
+                      <div class="col-4">
+                        <div class="row">
+                          <div class="col">
+                            <div class=" ms-3">
+                              <div class="doctor">
+                                <p class="text-secondary">Dentist</p>
+                                <p class="fs-6 ">Drg. Adam H.</p>
+                              </div>  
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class=" ms-3">
+                              <div class="nurse">
+                                <p class="text-secondary">Nurse</p>
+                                <p class="fs-6 ">Jessicamila</p>
+                              </div>  
+                            </div>
+                          </div>
+                        </div>          
+                      </div>
+                      <div class="col-1">
+                        <div>
+                          <button type="button" class="btn btn-link " style="text-decoration: none;"><i class='bx bx-detail'></i>Report</button>
+                        </div>
+                      </div>
+                    </div>   
+                  </div>
+                </div>
+                
+
+                <div class="card-body">
+                  <div class=" align-items-center bg-white p-3 border rounded ">
+                    <div class="row">
+                      <div class="col-lg-3 col-5">
+                        <div class=" ms-3">
+                          <div class="date">
+                            <h5 class="fw-500">22 Jan'21</h5>
+                            <p class="fs-7 text-secondary">09.00 - 10.00</p>
+                          </div>  
+                        </div>
+                      </div>
+                      <span id="vertical-line"></span>
+                      <div class="col-lg-3 col-5">
+                        <div class=" ms-3">
+                          <div class="Treatment-type">
+                            <p class="text-secondary">Treatment</p>
+                            <p class="fs-6 ">Root Canal</p>
+                          </div>  
+                        </div>
+                      </div>
+                      <span id="vertical-line"></span>
+                      <div class="col-lg-4">
+                        <div class="row">
+                          <div class="col">
+                            <div class=" ms-3">
+                              <div class="doctor">
+                                <p class="text-secondary">Dentist</p>
+                                <p class="fs-6 ">Drg. Adam H.</p>
+                              </div>  
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class=" ms-3">
+                              <div class="nurse">
+                                <p class="text-secondary">Nurse</p>
+                                <p class="fs-6 ">Jessicamila</p>
+                              </div>  
+                            </div>
+                          </div>
+                        </div>          
+                      </div>
+                      <div class="col-1">
+                        <div>
+                          <button type="button" class="btn btn-link " style="text-decoration: none;"><i class='bx bx-detail'></i>Report</button>
+                        </div>                        
+                      <div>                     
+                    </div>    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
