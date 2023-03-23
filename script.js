@@ -35,3 +35,8 @@ nextBtn.addEventListener("click", () => {
 backBtn.addEventListener("click", () => {
   form.classList.remove("secActive");
 });
+function formSubmit() {
+  alert("New patient details added. Get back to Details page.");
+}
+
+
